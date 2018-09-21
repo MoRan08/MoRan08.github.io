@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="​     ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.">
+<meta name="description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
 <meta name="keywords" content="jsx,组件开发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React之JSX">
-<meta property="og:url" content="http://yoursite.com/2018/09/20/react之JSX/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/09/20/react-jsx/index.html">
 <meta property="og:site_name" content="墨染辰枫">
-<meta property="og:description" content="​     ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.">
+<meta property="og:description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-20T09:55:22.877Z">
+<meta property="og:updated_time" content="2018-09-21T01:46:45.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React之JSX">
-<meta name="twitter:description" content="​     ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.">
+<meta name="twitter:description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
 
 
 
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/20/react之JSX/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/20/react-jsx/"/>
 
 
 
@@ -147,6 +147,8 @@
 
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
+
+    <a href="https://github.com/MoRan08"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -187,6 +189,36 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -233,12 +265,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/react之JSX/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/react-jsx/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MoRan">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/heard.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -306,6 +338,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 </span>
+                
+                <span title="阅读时长">
+                  4 分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -322,38 +385,28 @@
       
 
       
-        <p>​    </p>
-<p>​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。</p>
-<p>中文网参考：<a href="https://doc.react-china.org/docs/jsx-in-depth.html" target="_blank" rel="noopener">https://doc.react-china.org/docs/jsx-in-depth.html</a> (一定要去看一下)</p>
+        <p> ​<br> ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。<br> 中文网参考：<a href="https://doc.react-china.org/docs/jsx-in-depth.html" target="_blank" rel="noopener">https://doc.react-china.org/docs/jsx-in-depth.html</a> (一定要去看一下)</p>
 <h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ol>
-<li><p>基本规则</p>
-<p>JSX 构建组件的规则和 XML 规则一致 </p>
-</li>
-<li><p>嵌套规则</p>
-<p>标签可以任意嵌套。例如： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		text content</span><br><span class="line">    		&lt;ul&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    		&lt;/ul&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>基本规则<br>JSX 构建组件的规则和 XML 规则一致 </li>
+<li>嵌套规则<br>标签可以任意嵌套。例如： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		text content</span><br><span class="line">    		&lt;ul&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    		&lt;/ul&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="3">
-<li><p>标签闭合</p>
-<p>标签必须严格闭合，否则无法编译通过。 </p>
-<p>自闭合： </p>
+<li><p>标签闭合<br>标签必须严格闭合，否则无法编译通过。<br>自闭合： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;input type=&quot;text&quot; /&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>标签闭合： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;.......&lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="4">
-<li><p>JSX组件</p>
-<p>JSX 组件分为 HTML 组件和 React 组件，HTML 组件就是 HTML 中的原生标签例如： </p>
+<li><p>JSX组件<br>JSX 组件分为 HTML 组件和 React 组件，HTML 组件就是 HTML 中的原生标签例如： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;P&gt;hello,React World&lt;/p&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function render()&#123;</span><br><span class="line">    return &lt;ul&gt;</span><br><span class="line">                &lt;li&gt;list item1&lt;/li&gt;</span><br><span class="line">                &lt;li&gt;list item2&lt;/li&gt;</span><br><span class="line">    	  &lt;/ul&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>React 组件就是自定义的组件，例如： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//定义一个自定义组件</span><br><span class="line">var CustomComponnet = React.createClass(&#123;</span><br><span class="line">    render: function() &#123;</span><br><span class="line">        return &lt;div&gt;custom component&lt;/div&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)；</span><br><span class="line">//使用自定义组件</span><br><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt; &lt;CustomComponnet /&gt; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="5">
-<li><p>组建属性</p>
-<p>和 HTML 一样，JSX 中组件也有属性，传递属性的方式也相同，对于 HTML 组件： </p>
+<li><p>组建属性<br>和 HTML 一样，JSX 中组件也有属性，传递属性的方式也相同，对于 HTML 组件： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p title=&quot;title&quot;&gt;hello,React ,world&lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>如果是 React 组件可以定义自定义属性（Props），传递自定义属性的方式： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;  &lt;CustomComponnet customProps=&quot;data&quot; /&gt; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -363,40 +416,25 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;div className=&quot;....&quot;&gt;</span><br><span class="line">    			&lt;lable htmlFor=&quot;...&quot;&gt;&lt;/lable&gt;</span><br><span class="line">    			&lt;input onChange=&quot;....&quot; /&gt;</span><br><span class="line">    	   &lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>而原生的写法为:</strong> </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;....&quot;&gt;</span><br><span class="line">    &lt;lable for=&quot;...&quot;&gt;&lt;/lable&gt;</span><br><span class="line">    &lt;input onchange=&quot;....&quot; /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>​    主要是出于标准的原因，驼峰式是 Javascript 的标准写法，并且 React 底层是将属性直接对应到原生 DOM 的属性，而原生 DOM 的属性是驼峰式的写法，这里也可以理解为什么类名不是 class 而是 className 了, 又因为 class 和 for 还是 js 关键字，所以 jsx 中:   </p>
-<p>​    class  =&gt;  calssName  </p>
-<p>​     for  =&gt;  htmlFor      </p>
-<p>​     除此之外比较特殊的地方是 <code>data-*</code> 和 <code>aria-*</code> 两类属性是和 HTML 一致的。 </p>
+<p>​    主要是出于标准的原因，驼峰式是 Javascript 的标准写法，并且 React 底层是将属性直接对应到原生 DOM 的属性，而原生 DOM 的属性是驼峰式的写法，这里也可以理解为什么类名不是 class 而是 className 了, 又因为 class 和 for 还是 js 关键字，所以 jsx 中:<br>​    class  =&gt;  calssName<br>​     for  =&gt;  htmlFor<br>​     除此之外比较特殊的地方是 <code>data-*</code> 和 <code>aria-*</code> 两类属性是和 HTML 一致的。 </p>
 </li>
-<li><p>显示文本</p>
-<p>很多情况，我们需要将 JS 中的文本直接显示，做法和显示变量属性一样，用花括号 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = &quot;Hello ,World&quot;;</span><br><span class="line">    return &lt;p&gt; &#123;text&#125; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>显示文本<br>很多情况，我们需要将 JS 中的文本直接显示，做法和显示变量属性一样，用花括号 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = &quot;Hello ,World&quot;;</span><br><span class="line">    return &lt;p&gt; &#123;text&#125; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="7">
-<li><p>运算</p>
-<p>花括号里边实际上除了变量以外，可以是一段 JS 表达式，我们可以利用花括号做简单的运算： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = text;</span><br><span class="line">    var isTrue = false;</span><br><span class="line">    var arr = [1,2,3];</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		&#123;text&#125;</span><br><span class="line">    		&#123;isTrue ? &quot;true&quot; : &quot;false&quot; &#125;</span><br><span class="line">    		&#123; arr.map(function(it)&#123;</span><br><span class="line">                return &lt;span&gt; &#123;it&#125; &lt;/span&gt;</span><br><span class="line">    		&#125;)&#125;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>运算<br>花括号里边实际上除了变量以外，可以是一段 JS 表达式，我们可以利用花括号做简单的运算： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = text;</span><br><span class="line">    var isTrue = false;</span><br><span class="line">    var arr = [1,2,3];</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		&#123;text&#125;</span><br><span class="line">    		&#123;isTrue ? &quot;true&quot; : &quot;false&quot; &#125;</span><br><span class="line">    		&#123; arr.map(function(it)&#123;</span><br><span class="line">                return &lt;span&gt; &#123;it&#125; &lt;/span&gt;</span><br><span class="line">    		&#125;)&#125;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="8">
-<li><p>注释</p>
-<p>注释写法如下： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		/* 这里是注释 */</span><br><span class="line">           &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>注释<br>注释写法如下： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		/* 这里是注释 */</span><br><span class="line">           &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="9">
-<li><p>限制规则</p>
-<p>render 方法返回的组件必须是有且只有一个根组件，错误情况的例子 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//无法编译通过，JSX会提示编译错误</span><br><span class="line">function render()&#123;</span><br><span class="line">    renter (</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>限制规则<br>render 方法返回的组件必须是有且只有一个根组件，错误情况的例子 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//无法编译通过，JSX会提示编译错误</span><br><span class="line">function render()&#123;</span><br><span class="line">    renter (</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <ol start="10">
-<li><p>组件命名空间</p>
-<p>JSX 可以通过命名空间的方式使用组件, 通过命名空间的方式可以解决相同名称不同用途组件冲突的问题。 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    	  		&lt;CustomComponnet1.SubElement /&gt;</span><br><span class="line">    	  		&lt;CustomComponnet2.SubElement /&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>​    </p>
-</li>
+<li>组件命名空间<br>JSX 可以通过命名空间的方式使用组件, 通过命名空间的方式可以解决相同名称不同用途组件冲突的问题。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    	  		&lt;CustomComponnet1.SubElement /&gt;</span><br><span class="line">    	  		&lt;CustomComponnet2.SubElement /&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -411,13 +449,24 @@
 
     
 
+  <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/jsx/" rel="tag"># jsx</a>
+            <a href="/tags/jsx/" rel="tag"><i class="fa fa-tag"></i>jsx</a>
           
-            <a href="/tags/组件开发/" rel="tag"># 组件开发</a>
+            <a href="/tags/组件开发/" rel="tag"><i class="fa fa-tag"></i>组件开发</a>
           
         </div>
       
@@ -504,6 +553,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/heard.jpg"
+                alt="MoRan" />
+            
               <p class="site-author-name" itemprop="name">MoRan</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -526,7 +579,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -548,11 +601,61 @@
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/MoRan08" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:18769977818@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
 
           
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -570,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-number">1.</span> <span class="nav-text">基础</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-text">基础</span></a></li></ol></div>
             
 
           </div>
@@ -590,16 +693,22 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-star"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">MoRan</span>
 
   
 </div>
-
-
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<!--
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
@@ -608,8 +717,8 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+-->
 
 
 
@@ -707,6 +816,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
