@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="jsx,组件开发," />
+  <meta name="keywords" content="同源策略,跨域,前后端分离," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
-<meta name="keywords" content="jsx,组件开发">
+<meta name="description" content="一、Origin（源）源由下面三个部分组成：  域名 端口 协议  两个 URL ，只有这三个都相同的情况下，才可以称为同源。 下来就以 “http://www.example.com/page.html&amp;quot; 这个链接来比较说明：    对比URL 结果 原因     http://m.example.com/page.html 不同源 域名不同   https://www.example">
+<meta name="keywords" content="同源策略,跨域,前后端分离">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React之JSX">
-<meta property="og:url" content="http://yoursite.com/2018/09/20/react-jsx/index.html">
+<meta property="og:title" content="浏览器同源策略，及跨域解决方案">
+<meta property="og:url" content="http://yoursite.com/2018/09/26/浏览器同源策略，及跨域解决方案/index.html">
 <meta property="og:site_name" content="墨染辰枫">
-<meta property="og:description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
+<meta property="og:description" content="一、Origin（源）源由下面三个部分组成：  域名 端口 协议  两个 URL ，只有这三个都相同的情况下，才可以称为同源。 下来就以 “http://www.example.com/page.html&amp;quot; 这个链接来比较说明：    对比URL 结果 原因     http://m.example.com/page.html 不同源 域名不同   https://www.example">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-21T01:46:45.773Z">
+<meta property="og:updated_time" content="2018-09-26T08:55:03.820Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React之JSX">
-<meta name="twitter:description" content="​ ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。 中文网参考：https://doc.react-china.org">
+<meta name="twitter:title" content="浏览器同源策略，及跨域解决方案">
+<meta name="twitter:description" content="一、Origin（源）源由下面三个部分组成：  域名 端口 协议  两个 URL ，只有这三个都相同的情况下，才可以称为同源。 下来就以 “http://www.example.com/page.html&amp;quot; 这个链接来比较说明：    对比URL 结果 原因     http://m.example.com/page.html 不同源 域名不同   https://www.example">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/20/react-jsx/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/26/浏览器同源策略，及跨域解决方案/"/>
 
 
 
 
 
-  <title>React之JSX | 墨染辰枫</title>
+  <title>浏览器同源策略，及跨域解决方案 | 墨染辰枫</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/react-jsx/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/26/浏览器同源策略，及跨域解决方案/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MoRan">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">React之JSX</h1>
+          <h1 class="post-title" itemprop="name headline">浏览器同源策略，及跨域解决方案</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T00:00:00+08:00">
-                2018-09-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-26T00:00:00+08:00">
+                2018-09-26
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/React/" itemprop="url" rel="index">
-                    <span itemprop="name">React</span>
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
                   </a>
                 </span>
 
@@ -348,7 +348,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1k
+                  684
                 </span>
               
 
@@ -364,7 +364,7 @@
                   <span class="post-meta-item-text">阅读时长 </span>
                 
                 <span title="阅读时长">
-                  4 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -385,56 +385,79 @@
       
 
       
-        <p> ​<br> ​    JSX语法JSX 是Facebook为React开发的一套语法糖，创建 JSX 语法的本质目的是为了使用基于 xml 的方式表达组件的嵌套，保持和 HTML 一致的结构，语法上除了在描述组件上比较特别以外，其它和普通的 Javascript 没有区别。 并且最终所有的 JSX 都会编译为原生 Javascript。<br> 中文网参考：<a href="https://doc.react-china.org/docs/jsx-in-depth.html" target="_blank" rel="noopener">https://doc.react-china.org/docs/jsx-in-depth.html</a> (一定要去看一下)</p>
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><ol>
-<li>基本规则<br>JSX 构建组件的规则和 XML 规则一致 </li>
-<li>嵌套规则<br>标签可以任意嵌套。例如： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		text content</span><br><span class="line">    		&lt;ul&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    			&lt;li&gt;.......&lt;/li&gt;</span><br><span class="line">    		&lt;/ul&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+        <h2 id="一、Origin（源）"><a href="#一、Origin（源）" class="headerlink" title="一、Origin（源）"></a>一、Origin（源）</h2><p>源由下面三个部分组成：</p>
+<ol>
+<li>域名</li>
+<li>端口</li>
+<li>协议</li>
 </ol>
-<ol start="3">
-<li><p>标签闭合<br>标签必须严格闭合，否则无法编译通过。<br>自闭合： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;input type=&quot;text&quot; /&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>标签闭合： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;.......&lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>两个 URL ，只有这三个都相同的情况下，才可以称为同源。</strong></p>
+<p>下来就以 “<a href="http://www.example.com/page.html&quot;" target="_blank" rel="noopener">http://www.example.com/page.html&quot;</a> 这个链接来比较说明：</p>
+<table>
+<thead>
+<tr>
+<th>对比URL</th>
+<th>结果</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://m.example.com/page.html" target="_blank" rel="noopener">http://m.example.com/page.html</a></td>
+<td>不同源</td>
+<td>域名不同</td>
+</tr>
+<tr>
+<td><a href="https://www.example.com/page.html" target="_blank" rel="noopener">https://www.example.com/page….</a></td>
+<td>不同源</td>
+<td>协议不同</td>
+</tr>
+<tr>
+<td><a href="http://www.example.com/" target="_blank" rel="noopener">http://www.example.com</a>:8080/page.html</td>
+<td>不同源</td>
+<td>端口不同</td>
+</tr>
+<tr>
+<td><a href="http://www.example.com/page3.html" target="_blank" rel="noopener">http://www.example.com/page3….</a></td>
+<td>同源</td>
+<td>同域名，同端口，同协议</td>
+</tr>
+</tbody>
+</table>
+<h2 id="二、同源策略"><a href="#二、同源策略" class="headerlink" title="二、同源策略"></a>二、同源策略</h2><p><strong>浏览器的同源策略是一种安全功能，同源策略限制了从同一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的重要安全机制。所以a.com下的js脚本采用ajax读取b.com里面的文件数据是会报错的。</strong></p>
+<p>基于这个策略，有以下几种限制：</p>
+<ul>
+<li>cookie：js不能读取其它域下的cookie，否则你的登录信息，安全信息就泄露了；</li>
+<li>Storage和IndexDB： 道理同cookie；</li>
+<li>DOM 和 JS 对象；</li>
+<li>AJAX请求：不能发送另一个域下的Ajax请求；</li>
+</ul>
+<h2 id="三、什么是跨域"><a href="#三、什么是跨域" class="headerlink" title="三、什么是跨域"></a>三、什么是跨域</h2><p>跨域，指的是浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对javascript施加的安全限制。</p>
+<p>所谓同源是指，域名，协议，端口都相同。浏览器执行javascript脚本时，会检查这个脚本属于哪个页面，如果不是同源页面，就不会被执行。</p>
+<p>在浏览器中，<code>&lt;script&gt;</code>、<code>&lt;img&gt;</code> 、<code>&lt;iframe&gt;</code>、<code>&lt;link&gt;</code>、<code>&lt;video&gt;</code> 等标签都可以跨域加载资源，而不受同源策略的限制，通过 src 属性加载的资源，浏览器都会发起一个 GET 请求，但是浏览器限制了 JavaScript 的权限，使用js不能读、写加载的内容。 </p>
+<h2 id="四、解决跨域的方式"><a href="#四、解决跨域的方式" class="headerlink" title="四、解决跨域的方式"></a>四、解决跨域的方式</h2><p>目前来讲没有不依靠服务器端来跨域请求资源的技术 。</p>
+<ol>
+<li><p><code>jsonp</code> </p>
+<p>需要目标服务器配合一个callback函数。</p>
 </li>
-</ol>
-<ol start="4">
-<li><p>JSX组件<br>JSX 组件分为 HTML 组件和 React 组件，HTML 组件就是 HTML 中的原生标签例如： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;P&gt;hello,React World&lt;/p&gt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function render()&#123;</span><br><span class="line">    return &lt;ul&gt;</span><br><span class="line">                &lt;li&gt;list item1&lt;/li&gt;</span><br><span class="line">                &lt;li&gt;list item2&lt;/li&gt;</span><br><span class="line">    	  &lt;/ul&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>React 组件就是自定义的组件，例如： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//定义一个自定义组件</span><br><span class="line">var CustomComponnet = React.createClass(&#123;</span><br><span class="line">    render: function() &#123;</span><br><span class="line">        return &lt;div&gt;custom component&lt;/div&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)；</span><br><span class="line">//使用自定义组件</span><br><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt; &lt;CustomComponnet /&gt; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><code>window.name+iframe</code> </p>
+<p>需要目标服务器响应window.name。</p>
 </li>
-</ol>
-<ol start="5">
-<li><p>组建属性<br>和 HTML 一样，JSX 中组件也有属性，传递属性的方式也相同，对于 HTML 组件： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p title=&quot;title&quot;&gt;hello,React ,world&lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果是 React 组件可以定义自定义属性（Props），传递自定义属性的方式： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;  &lt;CustomComponnet customProps=&quot;data&quot; /&gt; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>属性即可以是字符串，也可以是任意的 Javascript 变量, 传递方式是将变量用花括号：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var data = &#123;a: 1,b:2&#125;;</span><br><span class="line">    return &lt;p&gt; &lt;CustomComponnet customProps=&#123;data&#125;  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>注意：属性的写法上和 HTML 存在区别，在写 JSX 的时候，所有的属性都是驼峰式（Webkit, ms）的写法:</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;div className=&quot;....&quot;&gt;</span><br><span class="line">    			&lt;lable htmlFor=&quot;...&quot;&gt;&lt;/lable&gt;</span><br><span class="line">    			&lt;input onChange=&quot;....&quot; /&gt;</span><br><span class="line">    	   &lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>而原生的写法为:</strong> </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;....&quot;&gt;</span><br><span class="line">    &lt;lable for=&quot;...&quot;&gt;&lt;/lable&gt;</span><br><span class="line">    &lt;input onchange=&quot;....&quot; /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>​    主要是出于标准的原因，驼峰式是 Javascript 的标准写法，并且 React 底层是将属性直接对应到原生 DOM 的属性，而原生 DOM 的属性是驼峰式的写法，这里也可以理解为什么类名不是 class 而是 className 了, 又因为 class 和 for 还是 js 关键字，所以 jsx 中:<br>​    class  =&gt;  calssName<br>​     for  =&gt;  htmlFor<br>​     除此之外比较特殊的地方是 <code>data-*</code> 和 <code>aria-*</code> 两类属性是和 HTML 一致的。 </p>
+<li><p><code>window.location.hash+iframe</code> </p>
+<p>同样需要目标服务器作处理。</p>
 </li>
-<li>显示文本<br>很多情况，我们需要将 JS 中的文本直接显示，做法和显示变量属性一样，用花括号 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = &quot;Hello ,World&quot;;</span><br><span class="line">    return &lt;p&gt; &#123;text&#125; &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>html5的 <code>postMessage+ifrme</code>      </p>
+<p>这个也是需要目标服务器或者说是目标页面写一个postMessage，主要侧重于前端通讯。</p>
 </li>
-</ol>
-<ol start="7">
-<li>运算<br>花括号里边实际上除了变量以外，可以是一段 JS 表达式，我们可以利用花括号做简单的运算： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    var text = text;</span><br><span class="line">    var isTrue = false;</span><br><span class="line">    var arr = [1,2,3];</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		&#123;text&#125;</span><br><span class="line">    		&#123;isTrue ? &quot;true&quot; : &quot;false&quot; &#125;</span><br><span class="line">    		&#123; arr.map(function(it)&#123;</span><br><span class="line">                return &lt;span&gt; &#123;it&#125; &lt;/span&gt;</span><br><span class="line">    		&#125;)&#125;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>CORS </p>
+<p>需要服务器设置header ：<code>Access-Control-Allow-Origin</code>。</p>
 </li>
-</ol>
-<ol start="8">
-<li>注释<br>注释写法如下： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    		/* 这里是注释 */</span><br><span class="line">           &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><code>nginx反向代理</code>    </p>
+<p>  这个方法一般很少有人提及，但是他可以不用目标服务器配合，不过需要你搭建一个中转nginx服务器，用于 转发请求。</p>
 </li>
-</ol>
-<ol start="9">
-<li>限制规则<br>render 方法返回的组件必须是有且只有一个根组件，错误情况的例子 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//无法编译通过，JSX会提示编译错误</span><br><span class="line">function render()&#123;</span><br><span class="line">    renter (</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		&lt;p&gt;..........&lt;/p&gt;</span><br><span class="line">    		)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>proxy 跨域</p>
+<p>通过代理设置，进行转发，一样可以达到跨域的目的 </p>
 </li>
-</ol>
-<ol start="10">
-<li>组件命名空间<br>JSX 可以通过命名空间的方式使用组件, 通过命名空间的方式可以解决相同名称不同用途组件冲突的问题。 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function render()&#123;</span><br><span class="line">    return &lt;p&gt;</span><br><span class="line">    	  		&lt;CustomComponnet1.SubElement /&gt;</span><br><span class="line">    	  		&lt;CustomComponnet2.SubElement /&gt;</span><br><span class="line">    	  &lt;/p&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -464,9 +487,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jsx/" rel="tag"><i class="fa fa-tag"></i>jsx</a>
+            <a href="/tags/同源策略/" rel="tag"><i class="fa fa-tag"></i>同源策略</a>
           
-            <a href="/tags/组件开发/" rel="tag"><i class="fa fa-tag"></i>组件开发</a>
+            <a href="/tags/跨域/" rel="tag"><i class="fa fa-tag"></i>跨域</a>
+          
+            <a href="/tags/前后端分离/" rel="tag"><i class="fa fa-tag"></i>前后端分离</a>
           
         </div>
       
@@ -479,7 +504,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/20/react之JSX/" rel="next" title="React之JSX">
+              <a href="/2018/09/20/react-jsx/" rel="next" title="React之JSX">
                 <i class="fa fa-chevron-left"></i> React之JSX
               </a>
             
@@ -489,8 +514,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/26/浏览器同源策略，及跨域解决方案/" rel="prev" title="浏览器同源策略，及跨域解决方案">
-                浏览器同源策略，及跨域解决方案 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/26/JavaScript深入之从原型到原型链/" rel="prev" title="JavaScript深入之从原型到原型链">
+                JavaScript深入之从原型到原型链 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -677,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-text">基础</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、Origin（源）"><span class="nav-text">一、Origin（源）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、同源策略"><span class="nav-text">二、同源策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、什么是跨域"><span class="nav-text">三、什么是跨域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、解决跨域的方式"><span class="nav-text">四、解决跨域的方式</span></a></li></ol></div>
             
 
           </div>
